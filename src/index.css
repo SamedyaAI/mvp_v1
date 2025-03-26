@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Google Sans', sans-serif;
+  }
+}
+
+.visual-abstract {
+  @apply max-w-7xl mx-auto bg-gradient-to-br from-white to-medical-50 rounded-lg shadow-xl overflow-hidden;
+}
+
+.visual-abstract-header {
+  @apply bg-gradient-to-r from-medical-700 to-medical-800 text-white p-6;
+}
+
+.visual-abstract-header h1 {
+  @apply font-google-sans text-headline-large font-bold text-center;
+}
+
+.visual-abstract-section {
+  @apply p-6 bg-gradient-to-br from-white to-medical-50 rounded-lg;
+}
+
+.visual-abstract-section h2 {
+  @apply font-google-sans text-headline-small text-medical-800 mb-4;
+}
+
+.visual-abstract-section h3 {
+  @apply font-google-sans text-title-large text-medical-700 mb-3;
+}
+
+.visual-abstract-text {
+  @apply text-body-large text-gray-800;
+}
+
+.visual-abstract-metric {
+  @apply text-title-medium font-medium;
+}
+
+.visual-abstract-badge {
+  @apply px-3 py-1 bg-gradient-to-r from-medical-600 to-medical-700 rounded-full text-white shadow-sm;
+}
+
+.chart-container {
+  @apply bg-white bg-opacity-90 p-4 rounded-lg shadow-sm backdrop-blur-sm;
+}
+
+.chart-title {
+  @apply font-google-sans text-title-large text-medical-800 mb-4;
+}
+
+.key-finding-card {
+  @apply bg-gradient-to-br from-white to-medical-50 p-4 rounded-lg shadow-sm 
+         hover:shadow-md transition-shadow duration-200;
+}
+
+.flow-step {
+  @apply relative flex items-center gap-4 mb-6;
+}
+
+.flow-step-number {
+  @apply w-8 h-8 rounded-full bg-gradient-to-r from-medical-600 to-medical-700 
+         text-white flex items-center justify-center font-bold shadow-sm;
+}
+
+.flow-step-content {
+  @apply flex-1 bg-white bg-opacity-90 p-4 rounded-lg shadow-sm backdrop-blur-sm;
+}
+
+.flow-step-line {
+  @apply absolute w-0.5 bg-gradient-to-b from-medical-400 to-medical-300 
+         left-4 top-8 bottom-0 -mb-6;
+}
+
+.conclusion-section {
+  @apply bg-gradient-to-r from-medical-700 to-medical-800 text-white p-6 rounded-lg;
+}
+
+.metric-badge {
+  @apply inline-flex items-center px-3 py-1.5 bg-white bg-opacity-20 
+         rounded-full text-sm font-medium backdrop-blur-sm;
+}
+
+.chart-legend {
+  @apply flex items-center gap-2 text-sm text-gray-600;
+}
+
+.chart-legend-dot {
+  @apply w-3 h-3 rounded-full;
+}
